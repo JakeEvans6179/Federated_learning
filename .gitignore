@@ -12,7 +12,7 @@ env/
 
 # Ignore Large Datasets (Prevents pushing huge files to GitHub)
 *.parquet
-# *.csv  (Remove the # if you want to ignore CSVs too)
+*.csv  (Remove the # if you want to ignore CSVs too)
 
 # Ignore Saved Models and Weights
 *.keras
