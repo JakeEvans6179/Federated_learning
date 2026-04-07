@@ -10,9 +10,9 @@ env/
 # Ignore Jupyter Notebook Checkpoints
 .ipynb_checkpoints/
 
-# Ignore Large Datasets (Prevents pushing huge files to GitHub)
+
 *.parquet
-*.csv  (Remove the # if you want to ignore CSVs too)
+*.csv 
 
 # Ignore Saved Models and Weights
 *.keras
