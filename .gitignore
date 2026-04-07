@@ -1,0 +1,29 @@
+# Ignore Python Cache
+__pycache__/
+*.py[cod]
+
+# Ignore Virtual Environments
+venv/
+env/
+.venv/
+
+# Ignore Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
+
+# Ignore Large Datasets (Prevents pushing huge files to GitHub)
+*.parquet
+# *.csv  (Remove the # if you want to ignore CSVs too)
+
+# Ignore Saved Models and Weights
+*.keras
+*.h5
+*.pb
+
+# Ignore generated plot images
+house_full_usage_plots/
+train_val_curve/
+*.png
+
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
