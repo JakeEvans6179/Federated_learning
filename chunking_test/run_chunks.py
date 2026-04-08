@@ -3,7 +3,7 @@ import sys
 from pathlib import Path
 
 # ===== first test settings =====
-TOTAL_CHUNKS = 2
+TOTAL_CHUNKS = 40
 CHUNK_ROUNDS = 5
 FRACTION_FIT = 0.3
 FRACTION_EVALUATE = 0.0   # safer first test

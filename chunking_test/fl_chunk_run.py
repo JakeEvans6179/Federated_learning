@@ -73,6 +73,8 @@ def build_model(input_shape):
         Input(shape=input_shape),
         LSTM(64),
         Dropout(0.2),
+        Dense(32, activation="relu"),
+        Dropout(0.2),
         Dense(HORIZON, activation="linear"),
     ])
     model.compile(
