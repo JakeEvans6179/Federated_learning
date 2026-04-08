@@ -24,6 +24,10 @@ house_full_usage_plots/
 train_val_curve/
 *.png
 
+
+*.npz
+
+
 # Ignore OS generated files
 .DS_Store
 Thumbs.db
