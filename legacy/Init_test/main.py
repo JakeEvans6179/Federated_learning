@@ -4,7 +4,7 @@ import numpy as np
 import pandas as pd
 import random 
 from pathlib import Path
-import Helper_functions
+import legacy.Init_test.Helper_functions as Helper_functions
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Input, LSTM, Dense, Dropout
 from tensorflow.keras.optimizers import Adam
