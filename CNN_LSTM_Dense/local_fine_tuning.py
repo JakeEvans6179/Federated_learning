@@ -15,7 +15,7 @@ import Helper_functions
 print("Num GPUs Available: ", len(tf.config.list_physical_devices('GPU')))
 
 '''
-LSTM64_Dense validation metrics (Federated fine tuning)
+CNN_LSTM_Dense validation metrics (Federated fine tuning)
 
 Load global model, calculate original metrics (RMSE, MAE on validation set)
 
