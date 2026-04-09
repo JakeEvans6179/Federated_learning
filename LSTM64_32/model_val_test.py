@@ -119,7 +119,7 @@ chunk_val_metrics = {}
 #First loop through all models to determine the performance of each, plot the validation loss against communication chunks
 for i in range(1, num_chunks + 1):
     tf.keras.backend.clear_session()  # Clear the Keras session to free up resources
-    model_path = f"chunk_checkpoints/global_chunk_{i:03d}.keras"
+    model_path = f"chunk_checkpoints/global_chunk_{i:03d}_LSTM64_32.keras"
     print(f"\nLoading model from {model_path}...")
     model = load_model(model_path)
 
@@ -165,7 +165,7 @@ summary_df = pd.DataFrame({
     "chunk": list(chunk_val_metrics.keys()),
     "mean_rmse_kwh": list(chunk_val_metrics.values())
 })
-summary_df["model"] = "LSTM64_federated"
+summary_df["model"] = "LSTM64_32_federated"
 summary_df.to_csv("chunk_validation_results.csv", index=False)
 
 

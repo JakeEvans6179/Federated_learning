@@ -34,7 +34,7 @@ max_min_path = Path("global_weather_scaler.csv")
 
 local_kwh_scaling = Path("local_kwh_scaler.csv")
 
-global_model_path = "chunk_checkpoints/"  #find the best model from validation screening and use for fine tuning
+global_model_path = "chunk_checkpoints/global_chunk_039.keras"  #load the global model
 
 
 HORIZON = 6

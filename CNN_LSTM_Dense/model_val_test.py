@@ -23,7 +23,7 @@ import Helper_functions
 print("Num GPUs Available: ", len(tf.config.list_physical_devices('GPU')))
 
 '''
-2CNN-lstm centralised training - validation screening
+CNN-LSTM_Dense federated training - validation screening
 '''
 
 
@@ -119,7 +119,7 @@ chunk_val_metrics = {}
 #First loop through all models to determine the performance of each, plot the validation loss against communication chunks
 for i in range(1, num_chunks + 1):
     tf.keras.backend.clear_session()  # Clear the Keras session to free up resources
-    model_path = f"chunk_checkpoints/global_chunk_{i:03d}.keras"
+    model_path = f"chunk_checkpoints/global_chunk_{i:03d}_CNN_LSTM_Dense.keras"
     print(f"\nLoading model from {model_path}...")
     model = load_model(model_path)
 
