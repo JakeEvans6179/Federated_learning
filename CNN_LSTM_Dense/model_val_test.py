@@ -165,7 +165,7 @@ summary_df = pd.DataFrame({
     "chunk": list(chunk_val_metrics.keys()),
     "mean_rmse_kwh": list(chunk_val_metrics.values())
 })
-summary_df["model"] = "LSTM64_federated"
+summary_df["model"] = "CNN_LSTM_Dense_federated"
 summary_df.to_csv("chunk_validation_results.csv", index=False)
 
 
