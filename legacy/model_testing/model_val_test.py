@@ -4,7 +4,7 @@ import pandas as pd
 
 from tensorflow.keras.models import load_model
 
-import Helper_functions
+import legacy.model_testing.Helper_functions as Helper_functions
 
 from pathlib import Path
 import pandas as pd
@@ -18,7 +18,7 @@ from tensorflow.keras.optimizers import Adam
 import matplotlib.pyplot as plt
 
 import random
-import Helper_functions
+import legacy.model_testing.Helper_functions as Helper_functions
 
 print("Num GPUs Available: ", len(tf.config.list_physical_devices('GPU')))
 
